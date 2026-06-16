@@ -1,0 +1,11 @@
+OmniGym
+All Rights Reserved
+
+Copyright (c) 2026 OmniGym. All rights reserved.
+
+This project, including all source code, design, branding, assets, content,
+and associated files, is proprietary and confidential.
+
+No part of this project may be copied, reproduced, modified, distributed,
+published, sublicensed, sold, or used in any form without prior written
+permission from OmniGym.
