@@ -9,5 +9,5 @@ Marketing landing page for OmniGym.
 
 ## Contact
 
-- Email: info@omni-academy.com
+- Email: inquiry@omni-academy.com
 - Phone: +923032712221
