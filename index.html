@@ -173,8 +173,8 @@
       top: 0;
       z-index: 50;
       transition: background var(--transition), box-shadow var(--transition), border-color var(--transition);
-      border-bottom: 1px solid transparent;
-      background: rgba(15, 25, 35, 0.02);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+      background: rgba(15, 25, 35, 0.78);
       backdrop-filter: blur(14px);
     }
 
@@ -186,7 +186,7 @@
 
     .nav {
       display: grid;
-      grid-template-columns: auto 1fr auto;
+      grid-template-columns: minmax(250px, 320px) 1fr auto;
       align-items: center;
       gap: 24px;
       min-height: 82px;
@@ -196,11 +196,16 @@
       display: inline-flex;
       align-items: center;
       min-width: 0;
+      justify-self: start;
     }
 
     .brand img {
-      height: 40px;
+      height: 52px;
       width: auto;
+      max-width: 100%;
+      object-fit: contain;
+      border-radius: 16px;
+      box-shadow: 0 10px 24px rgba(0, 0, 0, 0.16);
     }
 
     .brand-comment {
@@ -210,6 +215,7 @@
     .nav-links {
       display: flex;
       justify-content: center;
+      align-items: center;
       gap: 28px;
       font-weight: 600;
       color: rgba(255, 255, 255, 0.92);
@@ -224,6 +230,7 @@
       display: flex;
       align-items: center;
       gap: 12px;
+      justify-self: end;
     }
 
     .mobile-toggle {
@@ -294,7 +301,7 @@
     .hero-grid {
       position: relative;
       display: grid;
-      grid-template-columns: 1.02fr 0.98fr;
+      grid-template-columns: minmax(0, 1fr) minmax(460px, 520px);
       align-items: center;
       gap: 48px;
       width: 100%;
@@ -310,7 +317,7 @@
     .hero-copy {
       color: #C4D3DE;
       font-size: 1.12rem;
-      max-width: 650px;
+      max-width: 690px;
     }
 
     .hero-actions {
@@ -343,6 +350,8 @@
       background: linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.02));
       border: 1px solid rgba(255, 255, 255, 0.08);
       box-shadow: 0 28px 60px rgba(0, 0, 0, 0.28);
+      width: 100%;
+      margin-left: auto;
     }
 
     .mockup-window {
@@ -975,6 +984,9 @@
     .stacked-brand img {
       height: 88px;
       width: auto;
+      max-width: 100%;
+      border-radius: 18px;
+      box-shadow: 0 14px 32px rgba(0, 0, 0, 0.18);
     }
 
     footer {
@@ -1091,7 +1103,7 @@
 
     @media (max-width: 860px) {
       .nav {
-        grid-template-columns: auto auto;
+        grid-template-columns: minmax(0, 1fr) auto;
       }
 
       .nav-links,
@@ -1144,7 +1156,7 @@
       }
 
       .brand img {
-        height: 34px;
+        height: 44px;
       }
 
       .stacked-brand img {
@@ -1157,8 +1169,7 @@
   <header class="site-header" id="siteHeader">
     <div class="container nav">
       <a class="brand" href="#top" aria-label="OmniGym home">
-        <!-- WARNING: logo-primary-dark.svg not found in folder. Place the real OmniGym logo file here before deploying. -->
-        <!-- WARNING: logo-primary-light.svg not found in folder. Place the real OmniGym logo file here before deploying. -->
+        <img src="./assets/omnigym-primary-logo.png" alt="OmniGym logo">
       </a>
 
       <nav class="nav-links" aria-label="Primary">
@@ -1639,7 +1650,7 @@
       <div class="container">
         <div class="final-panel reveal">
           <div class="stacked-brand">
-            <!-- WARNING: logo-stacked.svg not found in folder. Place the real OmniGym logo file here before deploying. -->
+            <img src="./assets/omnigym-primary-logo.png" alt="OmniGym logo" loading="lazy">
           </div>
           <h2 class="section-title">AI should be the reason your gym software feels different.</h2>
           <p class="section-copy" style="max-width:680px; margin:18px auto 0; color: rgba(255,255,255,0.88);">If your current system only helps you record activity, OmniGym will feel like a different category of product. It helps your team create faster, react earlier, and coach smarter.</p>
@@ -1657,7 +1668,7 @@
       <div class="footer-grid">
         <div>
           <div class="stacked-brand" style="justify-content:flex-start; margin-bottom:16px;">
-            <!-- WARNING: logo-stacked.svg not found in folder. Place the real OmniGym logo file here before deploying. -->
+            <img src="./assets/omnigym-primary-logo.png" alt="OmniGym logo" loading="lazy">
           </div>
           <p style="max-width:320px; color:#9AB0BF;">AI-first gym software for program generation, churn prediction, nutrition logging, and the operational systems that support them.</p>
           <div class="contact-block">
