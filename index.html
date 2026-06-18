@@ -1035,6 +1035,42 @@
       font-size: 0.95rem;
     }
 
+    .contact-section-grid {
+      display: grid;
+      grid-template-columns: minmax(280px, 380px) minmax(0, 1fr);
+      gap: 26px;
+      align-items: start;
+    }
+
+    .contact-card {
+      padding: 28px;
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow);
+    }
+
+    .contact-card.dark-card {
+      background: linear-gradient(180deg, var(--navy-light), var(--navy));
+      color: var(--white);
+    }
+
+    .contact-card.light-card {
+      background: var(--white);
+    }
+
+    .contact-card .contact-block {
+      margin-top: 0;
+    }
+
+    .contact-card .contact-form-wrap {
+      margin-top: 0;
+      background: rgba(15, 25, 35, 0.03);
+      border: 1px solid rgba(15, 25, 35, 0.08);
+    }
+
+    .contact-card.light-card .contact-form-wrap p {
+      color: #5A7182;
+    }
+
     .contact-block strong {
       display: block;
       font-size: 0.82rem;
@@ -1099,6 +1135,7 @@
       .hero-grid,
       .ai-feature,
       .ai-feature.hero-ai,
+      .contact-section-grid,
       .ops-grid,
       .pricing-grid,
       .testimonials-grid,
@@ -1191,6 +1228,7 @@
         <a href="#ai">AI</a>
         <a href="#pricing">Pricing</a>
         <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
       </nav>
 
       <div class="nav-actions">
@@ -1208,6 +1246,7 @@
           <a href="#ai">AI</a>
           <a href="#pricing">Pricing</a>
           <a href="#faq">FAQ</a>
+          <a href="#contact">Contact</a>
         </div>
         <div class="mobile-actions">
           <a class="btn btn-ghost-dark" href="#footer-contact">Log In</a>
@@ -1675,6 +1714,39 @@
         </div>
       </div>
     </section>
+
+    <section class="section light" id="contact">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="eyebrow">Contact</span>
+          <h2 class="section-title">Talk to OmniGym directly</h2>
+          <p class="section-copy">Use the direct contact details below or send your inquiry through the embedded form. This section is separate from the footer so visitors can reach out without hunting for the form.</p>
+        </div>
+        <div class="contact-section-grid">
+          <article class="contact-card dark-card reveal">
+            <h3 style="font-size:1.7rem; margin-bottom:18px;">Direct contact</h3>
+            <div class="contact-block">
+              <div>
+                <strong>Email</strong>
+                <a href="mailto:info@omni-academy.com">info@omni-academy.com</a>
+              </div>
+              <div>
+                <strong>Phone</strong>
+                <a href="tel:+923032712221">+923032712221</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="contact-card light-card reveal">
+            <h3 style="font-size:1.7rem; margin-bottom:14px;">Send your inquiry directly from the page</h3>
+            <div class="contact-form-wrap">
+              <p>Fill out the form and the OmniGym team can follow up from Zoho CRM.</p>
+              <script id='formScript875740000143087004' src='https://crm.zoho.com/crm/WebFormServeServlet?rid=2a825bab43f8d23a6524cf7710664f3c02dcb6676399c90a684d1f14027835b72aa112a236bcf0f528a948981e810600gid352c8f6a2653ec64705af8443d3f7ed6566f11bcbafa2ec6be2051b1c5e8b4fb&script=$sYG'></script>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer id="footer-contact">
@@ -1694,10 +1766,6 @@
               <strong>Phone</strong>
               <a href="tel:+923032712221">+923032712221</a>
             </div>
-          </div>
-          <div class="contact-form-wrap">
-            <p>Send your inquiry directly from the page.</p>
-            <script id='formScript875740000143087004' src='https://crm.zoho.com/crm/WebFormServeServlet?rid=2a825bab43f8d23a6524cf7710664f3c02dcb6676399c90a684d1f14027835b72aa112a236bcf0f528a948981e810600gid352c8f6a2653ec64705af8443d3f7ed6566f11bcbafa2ec6be2051b1c5e8b4fb&script=$sYG'></script>
           </div>
         </div>
 
